@@ -7,6 +7,7 @@
     tools:context=".MessageOpenedActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
@@ -192,29 +193,30 @@
 
             <ImageView
                 android:id="@+id/imageView132"
-                android:layout_width="300dp"
-                android:layout_height="210dp"
+                android:layout_width="320dp"
+                android:layout_height="250dp"
                 android:layout_gravity="end"
                 app:srcCompat="@drawable/bg_message_dark" />
 
             <TextView
                 android:id="@+id/textView35"
-                android:layout_width="250dp"
+                android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="20dp"
                 android:text="Dear Machiel,    Thank you for expressing your interest in the Graphic Designer position at [Caravan Company]. We appreciate the opportunity to consider your application.    To better understand your design capabilities and potential contributions to our team, could you please share your portfolio showcasing your relevant projects? We look forward to reviewing your work and gaining insights into your creative expertise."
                 android:textColor="#FFFFFF"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/textView342"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/textView35"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="0dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/oxygen_bold"
                 android:text="15:05"
@@ -245,7 +247,7 @@
                 android:layout_marginBottom="20dp"
                 android:text="Thanks. I will call you later when I finish my Project"
                 android:textColor="#FFFFFF"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/textView343"
@@ -261,53 +263,60 @@
 
         </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="150dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/imageButton8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:src="@drawable/ic_smile"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="250dp"
-                android:layout_height="60dp"
-                app:boxBackgroundColor="#2D8C8C8C"
-                app:boxBackgroundMode="outline"
-                app:boxCornerRadiusBottomEnd="25dp"
-                app:boxCornerRadiusBottomStart="25dp"
-                app:boxCornerRadiusTopEnd="25dp"
-                app:boxCornerRadiusTopStart="25dp"
-                app:boxStrokeColor="#00FFFFFF"
-                app:hintTextColor="#CFCFCF">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/ic_document_gray"
-                    android:fontFamily="@font/oxygen_bold"
-                    android:hint="Type a message"
-                    android:textColor="#FFFFFF"
-                    android:textColorHint="#AAAAAA" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <ImageButton
-                android:id="@+id/imageButton9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="#00FFFFFF"
-                android:src="@drawable/ic_sendmessage2"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-        </LinearLayout>
-
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_smile"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:hint="Type a message"
+            android:textColorHint="#aaaaaa"
+            app:boxBackgroundColor="#2D8C8C8C"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="25dp"
+            app:boxCornerRadiusBottomStart="25dp"
+            app:boxCornerRadiusTopEnd="25dp"
+            app:boxCornerRadiusTopStart="25dp"
+            app:boxStrokeColor="#00FFFFFF"
+            app:endIconDrawable="@drawable/ic_document_gray"
+            app:hintTextColor="#CFCFCF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_document_gray"
+                android:fontFamily="@font/oxygen_bold"
+                android:hint="Type a message"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_sendmessage2"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

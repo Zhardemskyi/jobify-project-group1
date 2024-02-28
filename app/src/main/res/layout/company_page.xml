@@ -204,7 +204,7 @@
                     android:fontFamily="@font/oxygen"
                     android:text=" -Creating original design concepts in accordance with the requirements.  -Development and implementation of design projects for various media platforms, including websites, advertising banners, logos, dies, packages and other graphic elements.  -Work closely with the team to achieve common goals.  -Support and respect for the brand identity of the company or client in all design materials."
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/textView49"
@@ -225,7 +225,7 @@
                     android:fontFamily="@font/oxygen"
                     android:text=" -Work experience in the field of graphic design  -Professional knowledge of graphic editors and design software.  -Creative thinking and the ability to innovate in design.  -Attention to detail and the ability to meet deadlines."
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/textView51"
@@ -247,7 +247,7 @@
                     android:fontFamily="@font/oxygen"
                     android:text=" -working hours 2/1, from 9.00 to 18.00;  -project work;"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/button2"
