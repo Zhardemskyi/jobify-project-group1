@@ -11,7 +11,7 @@ class LoginActivity : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login_page)
+        setContentView(R.layout.activity_login)
 
         window.setFlags(
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
@@ -21,7 +21,14 @@ class LoginActivity : AppCompatActivity() {
         val signInRealButton: Button = findViewById(R.id.button_sign_in)
 
         signInRealButton.setOnClickListener {
-            val intent = Intent(this@LoginActivity, MainJobActivity::class.java)
+            val intent = Intent(this, MainJobActivity::class.java)
+            startActivity(intent)
+        }
+
+        val signUpButton: Button = findViewById(R.id.button_create_acc)
+
+        signUpButton.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
 
