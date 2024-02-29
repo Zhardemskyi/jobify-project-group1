@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.WindowManager
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.FirebaseApp
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")

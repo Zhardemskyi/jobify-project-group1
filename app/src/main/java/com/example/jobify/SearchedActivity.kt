@@ -1,7 +1,12 @@
 package com.example.jobify
 
-import androidx.appcompat.app.AppCompatActivity
+import android.annotation.SuppressLint
+import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.view.WindowManager
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class SearchedActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
